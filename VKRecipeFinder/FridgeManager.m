@@ -8,6 +8,7 @@
 
 #import "FridgeManager.h"
 #import "Availability.h"
+#import "NSDate+VKExtras.h"
 
 #define INDEX_ITEM 0
 #define INDEX_AMOUNT 1
@@ -46,6 +47,9 @@
 		// Any error in parsing the file content?
 		if (error == nil)
 		{
+			// Get the starting time for today at 00:00:00 AM for comparison
+			NSDate *startingToday = [NSDate startOfTheDate:[NSDate date]];
+
 			// Extract availability from lines
 			for (NSString *line in [fileContent componentsSeparatedByString:@"\n"])
 			{
@@ -67,18 +71,13 @@
 					year = year + 2000;
 				}
 
-				// Construct the date from each component
-				NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
-				[dateComponents setYear:year];
-				[dateComponents setMonth:month];
-				[dateComponents setDay:day];
-				[dateComponents setHour:0];
-				[dateComponents setMinute:0];
-				[dateComponents setSecond:0];
+				availability.expiryDate = [NSDate dateWithYear:year month:month day:day hour:0 minute:0 second:0];
 
-				availability.expiryDate = [[NSCalendar currentCalendar] dateFromComponents:dateComponents];
-
-				[result addObject:availability];
+				// Only record this availability if it has not expired yet
+				if ([startingToday compare:availability.expiryDate] != NSOrderedDescending)
+				{
+					[result addObject:availability];
+				}
 			}
 		}
 	}

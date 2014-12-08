@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class Ingredient;
+
 @interface Availability : NSObject
 
 @property (strong, nonatomic) NSString *item;
 @property (assign, nonatomic) int amount;
 @property (strong, nonatomic) NSString *unit;
 @property (strong, nonatomic) NSDate *expiryDate;
+
+- (BOOL)sufficientForIngredient:(Ingredient *)ingredient;
 
 @end

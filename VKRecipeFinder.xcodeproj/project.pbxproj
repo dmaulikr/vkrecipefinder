@@ -36,6 +36,7 @@
 		8EE5F4FF1A35E9D30004F7B4 /* Availability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F4FE1A35E9D30004F7B4 /* Availability.m */; };
 		8EE5F5021A35EA2C0004F7B4 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F5011A35EA2C0004F7B4 /* Ingredient.m */; };
 		8EE5F5071A35EA8D0004F7B4 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F5061A35EA8D0004F7B4 /* Recipe.m */; };
+		8EE5F50A1A3652B60004F7B4 /* NSDate+VKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F5091A3652B60004F7B4 /* NSDate+VKExtras.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		8EE5F5011A35EA2C0004F7B4 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
 		8EE5F5051A35EA8D0004F7B4 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
 		8EE5F5061A35EA8D0004F7B4 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		8EE5F5081A3652B60004F7B4 /* NSDate+VKExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+VKExtras.h"; sourceTree = "<group>"; };
+		8EE5F5091A3652B60004F7B4 /* NSDate+VKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+VKExtras.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,8 @@
 				8EDDD5261A35B2C500A01D08 /* UIView+Geometry.m */,
 				8EDDD5271A35B2C500A01D08 /* UIView+VKExtras.h */,
 				8EDDD5281A35B2C500A01D08 /* UIView+VKExtras.m */,
+				8EE5F5081A3652B60004F7B4 /* NSDate+VKExtras.h */,
+				8EE5F5091A3652B60004F7B4 /* NSDate+VKExtras.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 				8EE5F4F51A35DE750004F7B4 /* RemoveGoogleAccountButton.m in Sources */,
 				8EE5F4FF1A35E9D30004F7B4 /* Availability.m in Sources */,
 				8EDDD5291A35B2C500A01D08 /* UIView+Geometry.m in Sources */,
+				8EE5F50A1A3652B60004F7B4 /* NSDate+VKExtras.m in Sources */,
 				8EDDD4FC1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld in Sources */,
 				8EE5F4F91A35E5C40004F7B4 /* FridgeManager.m in Sources */,
 				8EDDD5201A35AFC700A01D08 /* GoogleDriveButton.m in Sources */,

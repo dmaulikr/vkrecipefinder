@@ -10,4 +10,9 @@
 
 @implementation Recipe
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"Recipe: %@, %lu ingredients", self.name, (unsigned long)self.ingredients.count];
+}
+
 @end

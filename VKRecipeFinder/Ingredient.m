@@ -10,4 +10,9 @@
 
 @implementation Ingredient
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"Ingredient: %@, %d %@", self.item, self.amount, self.unit];
+}
+
 @end
