@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  VKRecipeFinder
+
+  Created by Vinh Khoa Nguyen on 8/12/2014.
+  Copyright (c) 2014 Vinh Khoa Nguyen. All rights reserved.
+*/
+
+"Instructions" = "Instructions:\n\nStep 1: create 2 files called: fridge.csv & recipes.json containing data in the expected format\n\nStep 2: place them at the root folder of your Google Drive account\n\nStep 3: touch the button below to import them into the app.\n\nA recipe recommendation will be automatically displayed upon the import.";
+"Import_Button_Title" = "Import From Google Drive";

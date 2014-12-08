@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EDDD4F61A35AC8100A01D08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4F51A35AC8100A01D08 /* main.m */; };
+		8EDDD4F91A35AC8100A01D08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4F81A35AC8100A01D08 /* AppDelegate.m */; };
+		8EDDD4FC1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4FA1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld */; };
+		8EDDD4FF1A35AC8100A01D08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4FE1A35AC8100A01D08 /* ViewController.m */; };
+		8EDDD5021A35AC8100A01D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD5001A35AC8100A01D08 /* Main.storyboard */; };
+		8EDDD5041A35AC8100A01D08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD5031A35AC8100A01D08 /* Images.xcassets */; };
+		8EDDD5131A35AC8100A01D08 /* VKRecipeFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD5121A35AC8100A01D08 /* VKRecipeFinderTests.m */; };
+		8EDDD5201A35AFC700A01D08 /* GoogleDriveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD51F1A35AFC700A01D08 /* GoogleDriveButton.m */; };
+		8EDDD5241A35B12C00A01D08 /* UIColor+VKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD5231A35B12C00A01D08 /* UIColor+VKExtras.m */; };
+		8EDDD5291A35B2C500A01D08 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD5261A35B2C500A01D08 /* UIView+Geometry.m */; };
+		8EDDD52A1A35B2C500A01D08 /* UIView+VKExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD5281A35B2C500A01D08 /* UIView+VKExtras.m */; };
+		8EDDD52E1A35B98C00A01D08 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD52C1A35B98C00A01D08 /* Default-568h@2x.png */; };
+		8EDDD52F1A35B98C00A01D08 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD52D1A35B98C00A01D08 /* Default@2x.png */; };
+		8EDDD5311A35BACB00A01D08 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD5301A35BACB00A01D08 /* Default.png */; };
+		8EDDD53B1A35BDBA00A01D08 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD53D1A35BDBA00A01D08 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EDDD50D1A35AC8100A01D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EDDD4E81A35AC8000A01D08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EDDD4EF1A35AC8000A01D08;
+			remoteInfo = VKRecipeFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EDDD4F01A35AC8000A01D08 /* VKRecipeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKRecipeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDDD4F41A35AC8100A01D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDDD4F51A35AC8100A01D08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EDDD4F71A35AC8100A01D08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8EDDD4F81A35AC8100A01D08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8EDDD4FB1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKRecipeFinder.xcdatamodel; sourceTree = "<group>"; };
+		8EDDD4FD1A35AC8100A01D08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8EDDD4FE1A35AC8100A01D08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8EDDD5011A35AC8100A01D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EDDD5031A35AC8100A01D08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8EDDD50C1A35AC8100A01D08 /* VKRecipeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKRecipeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDDD5111A35AC8100A01D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDDD5121A35AC8100A01D08 /* VKRecipeFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKRecipeFinderTests.m; sourceTree = "<group>"; };
+		8EDDD51E1A35AFC700A01D08 /* GoogleDriveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleDriveButton.h; sourceTree = "<group>"; };
+		8EDDD51F1A35AFC700A01D08 /* GoogleDriveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleDriveButton.m; sourceTree = "<group>"; };
+		8EDDD5221A35B12C00A01D08 /* UIColor+VKExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VKExtras.h"; sourceTree = "<group>"; };
+		8EDDD5231A35B12C00A01D08 /* UIColor+VKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VKExtras.m"; sourceTree = "<group>"; };
+		8EDDD5251A35B2C500A01D08 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		8EDDD5261A35B2C500A01D08 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		8EDDD5271A35B2C500A01D08 /* UIView+VKExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VKExtras.h"; sourceTree = "<group>"; };
+		8EDDD5281A35B2C500A01D08 /* UIView+VKExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VKExtras.m"; sourceTree = "<group>"; };
+		8EDDD52C1A35B98C00A01D08 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8EDDD52D1A35B98C00A01D08 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8EDDD5301A35BACB00A01D08 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8EDDD5321A35BBDB00A01D08 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8EDDD53E1A35BDCE00A01D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EDDD4ED1A35AC8000A01D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EDDD5091A35AC8100A01D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EDDD4E71A35AC8000A01D08 = {
+			isa = PBXGroup;
+			children = (
+				8EDDD4F21A35AC8000A01D08 /* VKRecipeFinder */,
+				8EDDD50F1A35AC8100A01D08 /* VKRecipeFinderTests */,
+				8EDDD4F11A35AC8000A01D08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EDDD4F11A35AC8000A01D08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD4F01A35AC8000A01D08 /* VKRecipeFinder.app */,
+				8EDDD50C1A35AC8100A01D08 /* VKRecipeFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EDDD4F21A35AC8000A01D08 /* VKRecipeFinder */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD52B1A35B90D00A01D08 /* Images */,
+				8EDDD5211A35B12200A01D08 /* Categories */,
+				8EDDD51C1A35AF6200A01D08 /* UI */,
+				8EDDD4F71A35AC8100A01D08 /* AppDelegate.h */,
+				8EDDD4F81A35AC8100A01D08 /* AppDelegate.m */,
+				8EDDD4FD1A35AC8100A01D08 /* ViewController.h */,
+				8EDDD4FE1A35AC8100A01D08 /* ViewController.m */,
+				8EDDD5001A35AC8100A01D08 /* Main.storyboard */,
+				8EDDD5031A35AC8100A01D08 /* Images.xcassets */,
+				8EDDD4FA1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld */,
+				8EDDD4F31A35AC8100A01D08 /* Supporting Files */,
+				8EDDD5321A35BBDB00A01D08 /* Constants.h */,
+			);
+			path = VKRecipeFinder;
+			sourceTree = "<group>";
+		};
+		8EDDD4F31A35AC8100A01D08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD4F41A35AC8100A01D08 /* Info.plist */,
+				8EDDD4F51A35AC8100A01D08 /* main.m */,
+				8EDDD53D1A35BDBA00A01D08 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EDDD50F1A35AC8100A01D08 /* VKRecipeFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD5121A35AC8100A01D08 /* VKRecipeFinderTests.m */,
+				8EDDD5101A35AC8100A01D08 /* Supporting Files */,
+			);
+			path = VKRecipeFinderTests;
+			sourceTree = "<group>";
+		};
+		8EDDD5101A35AC8100A01D08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD5111A35AC8100A01D08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EDDD51C1A35AF6200A01D08 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD51E1A35AFC700A01D08 /* GoogleDriveButton.h */,
+				8EDDD51F1A35AFC700A01D08 /* GoogleDriveButton.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8EDDD5211A35B12200A01D08 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD5221A35B12C00A01D08 /* UIColor+VKExtras.h */,
+				8EDDD5231A35B12C00A01D08 /* UIColor+VKExtras.m */,
+				8EDDD5251A35B2C500A01D08 /* UIView+Geometry.h */,
+				8EDDD5261A35B2C500A01D08 /* UIView+Geometry.m */,
+				8EDDD5271A35B2C500A01D08 /* UIView+VKExtras.h */,
+				8EDDD5281A35B2C500A01D08 /* UIView+VKExtras.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		8EDDD52B1A35B90D00A01D08 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD52C1A35B98C00A01D08 /* Default-568h@2x.png */,
+				8EDDD52D1A35B98C00A01D08 /* Default@2x.png */,
+				8EDDD5301A35BACB00A01D08 /* Default.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EDDD4EF1A35AC8000A01D08 /* VKRecipeFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EDDD5161A35AC8100A01D08 /* Build configuration list for PBXNativeTarget "VKRecipeFinder" */;
+			buildPhases = (
+				8EDDD4EC1A35AC8000A01D08 /* Sources */,
+				8EDDD4ED1A35AC8000A01D08 /* Frameworks */,
+				8EDDD4EE1A35AC8000A01D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKRecipeFinder;
+			productName = VKRecipeFinder;
+			productReference = 8EDDD4F01A35AC8000A01D08 /* VKRecipeFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EDDD50B1A35AC8100A01D08 /* VKRecipeFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EDDD5191A35AC8100A01D08 /* Build configuration list for PBXNativeTarget "VKRecipeFinderTests" */;
+			buildPhases = (
+				8EDDD5081A35AC8100A01D08 /* Sources */,
+				8EDDD5091A35AC8100A01D08 /* Frameworks */,
+				8EDDD50A1A35AC8100A01D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EDDD50E1A35AC8100A01D08 /* PBXTargetDependency */,
+			);
+			name = VKRecipeFinderTests;
+			productName = VKRecipeFinderTests;
+			productReference = 8EDDD50C1A35AC8100A01D08 /* VKRecipeFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EDDD4E81A35AC8000A01D08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Vinh Khoa Nguyen";
+				TargetAttributes = {
+					8EDDD4EF1A35AC8000A01D08 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					8EDDD50B1A35AC8100A01D08 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 8EDDD4EF1A35AC8000A01D08;
+					};
+				};
+			};
+			buildConfigurationList = 8EDDD4EB1A35AC8000A01D08 /* Build configuration list for PBXProject "VKRecipeFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EDDD4E71A35AC8000A01D08;
+			productRefGroup = 8EDDD4F11A35AC8000A01D08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EDDD4EF1A35AC8000A01D08 /* VKRecipeFinder */,
+				8EDDD50B1A35AC8100A01D08 /* VKRecipeFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EDDD4EE1A35AC8000A01D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDDD52F1A35B98C00A01D08 /* Default@2x.png in Resources */,
+				8EDDD53B1A35BDBA00A01D08 /* Localizable.strings in Resources */,
+				8EDDD5021A35AC8100A01D08 /* Main.storyboard in Resources */,
+				8EDDD5041A35AC8100A01D08 /* Images.xcassets in Resources */,
+				8EDDD52E1A35B98C00A01D08 /* Default-568h@2x.png in Resources */,
+				8EDDD5311A35BACB00A01D08 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EDDD50A1A35AC8100A01D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EDDD4EC1A35AC8000A01D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDDD52A1A35B2C500A01D08 /* UIView+VKExtras.m in Sources */,
+				8EDDD5291A35B2C500A01D08 /* UIView+Geometry.m in Sources */,
+				8EDDD4FC1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld in Sources */,
+				8EDDD5201A35AFC700A01D08 /* GoogleDriveButton.m in Sources */,
+				8EDDD4F91A35AC8100A01D08 /* AppDelegate.m in Sources */,
+				8EDDD5241A35B12C00A01D08 /* UIColor+VKExtras.m in Sources */,
+				8EDDD4FF1A35AC8100A01D08 /* ViewController.m in Sources */,
+				8EDDD4F61A35AC8100A01D08 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EDDD5081A35AC8100A01D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDDD5131A35AC8100A01D08 /* VKRecipeFinderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EDDD50E1A35AC8100A01D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EDDD4EF1A35AC8000A01D08 /* VKRecipeFinder */;
+			targetProxy = 8EDDD50D1A35AC8100A01D08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EDDD5001A35AC8100A01D08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EDDD5011A35AC8100A01D08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EDDD53D1A35BDBA00A01D08 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EDDD53E1A35BDCE00A01D08 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EDDD5141A35AC8100A01D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8EDDD5151A35AC8100A01D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EDDD5171A35AC8100A01D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VKRecipeFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EDDD5181A35AC8100A01D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VKRecipeFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8EDDD51A1A35AC8100A01D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VKRecipeFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKRecipeFinder.app/VKRecipeFinder";
+			};
+			name = Debug;
+		};
+		8EDDD51B1A35AC8100A01D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VKRecipeFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VKRecipeFinder.app/VKRecipeFinder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EDDD4EB1A35AC8000A01D08 /* Build configuration list for PBXProject "VKRecipeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EDDD5141A35AC8100A01D08 /* Debug */,
+				8EDDD5151A35AC8100A01D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EDDD5161A35AC8100A01D08 /* Build configuration list for PBXNativeTarget "VKRecipeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EDDD5171A35AC8100A01D08 /* Debug */,
+				8EDDD5181A35AC8100A01D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EDDD5191A35AC8100A01D08 /* Build configuration list for PBXNativeTarget "VKRecipeFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EDDD51A1A35AC8100A01D08 /* Debug */,
+				8EDDD51B1A35AC8100A01D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8EDDD4FA1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8EDDD4FB1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodel */,
+			);
+			currentVersion = 8EDDD4FB1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodel */;
+			path = VKRecipeFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8EDDD4E81A35AC8000A01D08 /* Project object */;
+}
