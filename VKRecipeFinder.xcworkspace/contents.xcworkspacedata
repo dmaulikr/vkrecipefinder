@@ -4,4 +4,7 @@
    <FileRef
       location = "group:VKRecipeFinder.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:GoogleAPI/GTL.xcodeproj">
+   </FileRef>
 </Workspace>

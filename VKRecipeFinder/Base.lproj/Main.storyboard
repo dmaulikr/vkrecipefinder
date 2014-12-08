@@ -19,10 +19,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recipe Finder" id="MTW-Pf-zrM"/>
+                    <connections>
+                        <segue destination="lvn-KO-cBz" kind="presentation" identifier="openGoogleAuth" id="0mq-jv-I7Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1305" y="415"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oQN-Yc-TPS">
+            <objects>
+                <navigationController id="lvn-KO-cBz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eXR-GF-qpC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUP-iw-fX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="-243"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9qE-Sm-Wpk">
@@ -40,7 +56,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5D3-JQ-3AE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309" y="1076"/>
+            <point key="canvasLocation" x="520" y="415"/>
         </scene>
     </scenes>
 </document>

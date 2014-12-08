@@ -22,6 +22,20 @@
 		8EDDD52F1A35B98C00A01D08 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD52D1A35B98C00A01D08 /* Default@2x.png */; };
 		8EDDD5311A35BACB00A01D08 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD5301A35BACB00A01D08 /* Default.png */; };
 		8EDDD53B1A35BDBA00A01D08 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD53D1A35BDBA00A01D08 /* Localizable.strings */; };
+		8EDDD5441A35C56900A01D08 /* GoogleAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD5411A35C56900A01D08 /* GoogleAuthViewController.m */; };
+		8EDDD5451A35C56900A01D08 /* GoogleDrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD5431A35C56900A01D08 /* GoogleDrive.m */; };
+		8EDDD5481A35C5B800A01D08 /* GTLDrive_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD5461A35C5B800A01D08 /* GTLDrive_Sources.m */; };
+		8EDDD54E1A35C7F000A01D08 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDDD54D1A35C7F000A01D08 /* Security.framework */; };
+		8EDDD5501A35C7F600A01D08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDDD54F1A35C7F600A01D08 /* SystemConfiguration.framework */; };
+		8EDDD5521A35C9A900A01D08 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDD5511A35C9A900A01D08 /* GTMOAuth2ViewTouch.xib */; };
+		8EDDD5551A35CAAA00A01D08 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDDD5541A35CAAA00A01D08 /* QuartzCore.framework */; };
+		8EDDD55D1A35CC2600A01D08 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDDD55C1A35CC2600A01D08 /* libGTLTouchStaticLib.a */; };
+		8EE5F4F51A35DE750004F7B4 /* RemoveGoogleAccountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F4F41A35DE750004F7B4 /* RemoveGoogleAccountButton.m */; };
+		8EE5F4F91A35E5C40004F7B4 /* FridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F4F81A35E5C40004F7B4 /* FridgeManager.m */; };
+		8EE5F4FC1A35E6020004F7B4 /* RecipeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F4FB1A35E6020004F7B4 /* RecipeManager.m */; };
+		8EE5F4FF1A35E9D30004F7B4 /* Availability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F4FE1A35E9D30004F7B4 /* Availability.m */; };
+		8EE5F5021A35EA2C0004F7B4 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F5011A35EA2C0004F7B4 /* Ingredient.m */; };
+		8EE5F5071A35EA8D0004F7B4 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5F5061A35EA8D0004F7B4 /* Recipe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +75,29 @@
 		8EDDD5301A35BACB00A01D08 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8EDDD5321A35BBDB00A01D08 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		8EDDD53E1A35BDCE00A01D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8EDDD5401A35C56900A01D08 /* GoogleAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAuthViewController.h; sourceTree = "<group>"; };
+		8EDDD5411A35C56900A01D08 /* GoogleAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAuthViewController.m; sourceTree = "<group>"; };
+		8EDDD5421A35C56900A01D08 /* GoogleDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleDrive.h; sourceTree = "<group>"; };
+		8EDDD5431A35C56900A01D08 /* GoogleDrive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleDrive.m; sourceTree = "<group>"; };
+		8EDDD5461A35C5B800A01D08 /* GTLDrive_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDrive_Sources.m; path = GoogleAPI/Services/Drive/Generated/GTLDrive_Sources.m; sourceTree = SOURCE_ROOT; };
+		8EDDD5471A35C5B800A01D08 /* GTLDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDrive.h; path = GoogleAPI/Services/Drive/Generated/GTLDrive.h; sourceTree = SOURCE_ROOT; };
+		8EDDD54D1A35C7F000A01D08 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8EDDD54F1A35C7F600A01D08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8EDDD5511A35C9A900A01D08 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = GoogleAPI/OAuth2/Touch/GTMOAuth2ViewTouch.xib; sourceTree = SOURCE_ROOT; };
+		8EDDD5541A35CAAA00A01D08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8EDDD55C1A35CC2600A01D08 /* libGTLTouchStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGTLTouchStaticLib.a; sourceTree = "<group>"; };
+		8EE5F4F31A35DE750004F7B4 /* RemoveGoogleAccountButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveGoogleAccountButton.h; sourceTree = "<group>"; };
+		8EE5F4F41A35DE750004F7B4 /* RemoveGoogleAccountButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveGoogleAccountButton.m; sourceTree = "<group>"; };
+		8EE5F4F71A35E5C40004F7B4 /* FridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FridgeManager.h; sourceTree = "<group>"; };
+		8EE5F4F81A35E5C40004F7B4 /* FridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridgeManager.m; sourceTree = "<group>"; };
+		8EE5F4FA1A35E6020004F7B4 /* RecipeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeManager.h; sourceTree = "<group>"; };
+		8EE5F4FB1A35E6020004F7B4 /* RecipeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeManager.m; sourceTree = "<group>"; };
+		8EE5F4FD1A35E9D30004F7B4 /* Availability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Availability.h; sourceTree = "<group>"; };
+		8EE5F4FE1A35E9D30004F7B4 /* Availability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Availability.m; sourceTree = "<group>"; };
+		8EE5F5001A35EA2C0004F7B4 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
+		8EE5F5011A35EA2C0004F7B4 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
+		8EE5F5051A35EA8D0004F7B4 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		8EE5F5061A35EA8D0004F7B4 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDDD5551A35CAAA00A01D08 /* QuartzCore.framework in Frameworks */,
+				8EDDD55D1A35CC2600A01D08 /* libGTLTouchStaticLib.a in Frameworks */,
+				8EDDD5501A35C7F600A01D08 /* SystemConfiguration.framework in Frameworks */,
+				8EDDD54E1A35C7F000A01D08 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +127,7 @@
 			children = (
 				8EDDD4F21A35AC8000A01D08 /* VKRecipeFinder */,
 				8EDDD50F1A35AC8100A01D08 /* VKRecipeFinderTests */,
+				8EDDD5531A35CA1100A01D08 /* Frameworks */,
 				8EDDD4F11A35AC8000A01D08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,7 +146,9 @@
 			children = (
 				8EDDD52B1A35B90D00A01D08 /* Images */,
 				8EDDD5211A35B12200A01D08 /* Categories */,
+				8EDDD53F1A35C56100A01D08 /* Google Drive */,
 				8EDDD51C1A35AF6200A01D08 /* UI */,
+				8EE5F4F61A35E5960004F7B4 /* Models */,
 				8EDDD4F71A35AC8100A01D08 /* AppDelegate.h */,
 				8EDDD4F81A35AC8100A01D08 /* AppDelegate.m */,
 				8EDDD4FD1A35AC8100A01D08 /* ViewController.h */,
@@ -124,6 +168,7 @@
 				8EDDD4F41A35AC8100A01D08 /* Info.plist */,
 				8EDDD4F51A35AC8100A01D08 /* main.m */,
 				8EDDD53D1A35BDBA00A01D08 /* Localizable.strings */,
+				8EDDD5511A35C9A900A01D08 /* GTMOAuth2ViewTouch.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +195,8 @@
 			children = (
 				8EDDD51E1A35AFC700A01D08 /* GoogleDriveButton.h */,
 				8EDDD51F1A35AFC700A01D08 /* GoogleDriveButton.m */,
+				8EE5F4F31A35DE750004F7B4 /* RemoveGoogleAccountButton.h */,
+				8EE5F4F41A35DE750004F7B4 /* RemoveGoogleAccountButton.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -175,6 +222,63 @@
 				8EDDD5301A35BACB00A01D08 /* Default.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		8EDDD53F1A35C56100A01D08 /* Google Drive */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD5461A35C5B800A01D08 /* GTLDrive_Sources.m */,
+				8EDDD5471A35C5B800A01D08 /* GTLDrive.h */,
+				8EDDD5401A35C56900A01D08 /* GoogleAuthViewController.h */,
+				8EDDD5411A35C56900A01D08 /* GoogleAuthViewController.m */,
+				8EDDD5421A35C56900A01D08 /* GoogleDrive.h */,
+				8EDDD5431A35C56900A01D08 /* GoogleDrive.m */,
+			);
+			name = "Google Drive";
+			sourceTree = "<group>";
+		};
+		8EDDD5531A35CA1100A01D08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD55C1A35CC2600A01D08 /* libGTLTouchStaticLib.a */,
+				8EDDD5541A35CAAA00A01D08 /* QuartzCore.framework */,
+				8EDDD54F1A35C7F600A01D08 /* SystemConfiguration.framework */,
+				8EDDD54D1A35C7F000A01D08 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EE5F4F61A35E5960004F7B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EE5F5031A35EA630004F7B4 /* Fridge */,
+				8EE5F5041A35EA6B0004F7B4 /* Recipe */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8EE5F5031A35EA630004F7B4 /* Fridge */ = {
+			isa = PBXGroup;
+			children = (
+				8EE5F4FD1A35E9D30004F7B4 /* Availability.h */,
+				8EE5F4FE1A35E9D30004F7B4 /* Availability.m */,
+				8EE5F4F71A35E5C40004F7B4 /* FridgeManager.h */,
+				8EE5F4F81A35E5C40004F7B4 /* FridgeManager.m */,
+			);
+			name = Fridge;
+			sourceTree = "<group>";
+		};
+		8EE5F5041A35EA6B0004F7B4 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				8EE5F4FA1A35E6020004F7B4 /* RecipeManager.h */,
+				8EE5F4FB1A35E6020004F7B4 /* RecipeManager.m */,
+				8EE5F5001A35EA2C0004F7B4 /* Ingredient.h */,
+				8EE5F5011A35EA2C0004F7B4 /* Ingredient.m */,
+				8EE5F5051A35EA8D0004F7B4 /* Recipe.h */,
+				8EE5F5061A35EA8D0004F7B4 /* Recipe.m */,
+			);
+			name = Recipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDDD5521A35C9A900A01D08 /* GTMOAuth2ViewTouch.xib in Resources */,
 				8EDDD52F1A35B98C00A01D08 /* Default@2x.png in Resources */,
 				8EDDD53B1A35BDBA00A01D08 /* Localizable.strings in Resources */,
 				8EDDD5021A35AC8100A01D08 /* Main.storyboard in Resources */,
@@ -280,14 +385,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE5F5021A35EA2C0004F7B4 /* Ingredient.m in Sources */,
+				8EDDD5481A35C5B800A01D08 /* GTLDrive_Sources.m in Sources */,
 				8EDDD52A1A35B2C500A01D08 /* UIView+VKExtras.m in Sources */,
+				8EE5F4F51A35DE750004F7B4 /* RemoveGoogleAccountButton.m in Sources */,
+				8EE5F4FF1A35E9D30004F7B4 /* Availability.m in Sources */,
 				8EDDD5291A35B2C500A01D08 /* UIView+Geometry.m in Sources */,
 				8EDDD4FC1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld in Sources */,
+				8EE5F4F91A35E5C40004F7B4 /* FridgeManager.m in Sources */,
 				8EDDD5201A35AFC700A01D08 /* GoogleDriveButton.m in Sources */,
+				8EDDD5441A35C56900A01D08 /* GoogleAuthViewController.m in Sources */,
+				8EE5F5071A35EA8D0004F7B4 /* Recipe.m in Sources */,
+				8EDDD5451A35C56900A01D08 /* GoogleDrive.m in Sources */,
 				8EDDD4F91A35AC8100A01D08 /* AppDelegate.m in Sources */,
 				8EDDD5241A35B12C00A01D08 /* UIColor+VKExtras.m in Sources */,
 				8EDDD4FF1A35AC8100A01D08 /* ViewController.m in Sources */,
 				8EDDD4F61A35AC8100A01D08 /* main.m in Sources */,
+				8EE5F4FC1A35E6020004F7B4 /* RecipeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,10 +523,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAPI/build/Debug",
+				);
 				INFOPLIST_FILE = VKRecipeFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAPI/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -420,10 +548,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAPI/build/Debug",
+				);
 				INFOPLIST_FILE = VKRecipeFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAPI/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

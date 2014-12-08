@@ -7,7 +7,6 @@
 //
 
 #import "GoogleDriveButton.h"
-#import <QuartzCore/QuartzCore.h>
 #import "UIColor+VKExtras.h"
 #import "Constants.h"
 

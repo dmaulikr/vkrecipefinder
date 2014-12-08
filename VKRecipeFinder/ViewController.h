@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class GoogleDriveButton;
+@class GoogleDriveButton, RemoveGoogleAccountButton;
 
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) GoogleDriveButton *googleDriveButton;
+@property (strong, nonatomic) RemoveGoogleAccountButton *removeGoogleAccountButton;
 
 @end
 
