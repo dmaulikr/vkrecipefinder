@@ -159,6 +159,17 @@
 			name = "Ingredient Cells";
 			sourceTree = "<group>";
 		};
+		8E58993E1A36B84E00E03B77 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD51E1A35AFC700A01D08 /* GoogleDriveButton.h */,
+				8EDDD51F1A35AFC700A01D08 /* GoogleDriveButton.m */,
+				8EE5F4F31A35DE750004F7B4 /* RemoveGoogleAccountButton.h */,
+				8EE5F4F41A35DE750004F7B4 /* RemoveGoogleAccountButton.m */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 		8EDDD4E71A35AC8000A01D08 = {
 			isa = PBXGroup;
 			children = (
@@ -189,11 +200,11 @@
 				8E1ADBF51A36682300C9A811 /* Controllers */,
 				8EDDD4F71A35AC8100A01D08 /* AppDelegate.h */,
 				8EDDD4F81A35AC8100A01D08 /* AppDelegate.m */,
+				8EDDD5321A35BBDB00A01D08 /* Constants.h */,
 				8EDDD5001A35AC8100A01D08 /* Main.storyboard */,
 				8EDDD5031A35AC8100A01D08 /* Images.xcassets */,
 				8EDDD4FA1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld */,
 				8EDDD4F31A35AC8100A01D08 /* Supporting Files */,
-				8EDDD5321A35BBDB00A01D08 /* Constants.h */,
 			);
 			path = VKRecipeFinder;
 			sourceTree = "<group>";
@@ -230,10 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				8E5899341A36916700E03B77 /* Ingredient Cells */,
-				8EDDD51E1A35AFC700A01D08 /* GoogleDriveButton.h */,
-				8EDDD51F1A35AFC700A01D08 /* GoogleDriveButton.m */,
-				8EE5F4F31A35DE750004F7B4 /* RemoveGoogleAccountButton.h */,
-				8EE5F4F41A35DE750004F7B4 /* RemoveGoogleAccountButton.m */,
+				8E58993E1A36B84E00E03B77 /* Buttons */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -301,10 +309,10 @@
 		8EE5F5031A35EA630004F7B4 /* Fridge */ = {
 			isa = PBXGroup;
 			children = (
-				8EE5F4FD1A35E9D30004F7B4 /* Availability.h */,
-				8EE5F4FE1A35E9D30004F7B4 /* Availability.m */,
 				8EE5F4F71A35E5C40004F7B4 /* FridgeManager.h */,
 				8EE5F4F81A35E5C40004F7B4 /* FridgeManager.m */,
+				8EE5F4FD1A35E9D30004F7B4 /* Availability.h */,
+				8EE5F4FE1A35E9D30004F7B4 /* Availability.m */,
 			);
 			name = Fridge;
 			sourceTree = "<group>";
@@ -586,6 +594,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
@@ -611,6 +620,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
