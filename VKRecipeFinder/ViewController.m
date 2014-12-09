@@ -10,6 +10,7 @@
 #import "Constants.h"
 #import "UIView+VKExtras.h"
 #import "UIColor+VKExtras.h"
+#import "UIViewController+Extras.h"
 #import "GoogleDriveButton.h"
 #import "GTMOAuth2ViewControllerTouch.h"
 #import "GTLDrive.h"
@@ -25,6 +26,8 @@
 #define SEGUE_ID_GOOGLE_AUTH @"openGoogleAuth"
 #define SEGUE_ID_SHOW_RECOMMENDATION @"showRecommendation"
 
+#define VIEW_PADDING 20
+
 @implementation ViewController
 {
 	Recipe *recommendedRecipe;
@@ -39,27 +42,27 @@
 	[self.view addSubview:self.googleDriveButton];
 	self.googleDriveButton.translatesAutoresizingMaskIntoConstraints = NO;
 	[self.googleDriveButton constraintToSelfSize];
-	[self.googleDriveButton constraintToSuperViewBottom:60];
+	[self.googleDriveButton constraintToSuperViewBottom:50];
 	[self.googleDriveButton constraintToSuperViewCenterHorizontally];
 
 	// Instructions
-	UILabel *instructionsLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-	instructionsLabel.text = NSLocalizedString(@"Instructions", nil);
-	instructionsLabel.font = [UIFont systemFontOfSize:APP_FONT_SIZE];
-	instructionsLabel.textColor = APP_TEXT_COLOR;
-	instructionsLabel.numberOfLines = 0;
-	[self.view addSubview:instructionsLabel];
-	instructionsLabel.translatesAutoresizingMaskIntoConstraints = NO;
-	[instructionsLabel constraintToSuperViewTop:0];
-	[instructionsLabel constraintToSuperViewCenterHorizontallyMargin:20];
-	[self.view constraintSubview:instructionsLabel andSubview:self.googleDriveButton yDistance:0];
+	self.instructionsLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+	self.instructionsLabel.text = NSLocalizedString(@"Instructions", nil);
+	self.instructionsLabel.font = [UIFont systemFontOfSize:APP_FONT_SIZE];
+	self.instructionsLabel.textColor = APP_TEXT_COLOR;
+	self.instructionsLabel.numberOfLines = 0;
+	[self.view addSubview:self.instructionsLabel];
+	self.instructionsLabel.translatesAutoresizingMaskIntoConstraints = NO;
+	[self.instructionsLabel constraintToSuperViewTop:([self barsHeight] + 10)];
+	[self.instructionsLabel constraintToSuperViewCenterHorizontallyMargin:VIEW_PADDING];
+	[self.instructionsLabel constraintToHeight:0];
 
 	// Remove Google Account button
 	self.removeGoogleAccountButton = [[RemoveGoogleAccountButton alloc] initButtonWithTarget:self action:@selector(touchedRemoveAccountButton)];
 	[self.view addSubview:self.removeGoogleAccountButton];
 	self.removeGoogleAccountButton.translatesAutoresizingMaskIntoConstraints = NO;
 	[self.removeGoogleAccountButton constraintToSelfSize];
-	[self.view constraintSubview:self.googleDriveButton andSubview:self.removeGoogleAccountButton yDistance:10];
+	[self.view constraintSubview:self.googleDriveButton andSubview:self.removeGoogleAccountButton yDistance:5];
 	[self.removeGoogleAccountButton constraintToSuperViewCenterHorizontally];
 	self.removeGoogleAccountButton.hidden = ![[GoogleDrive sharedDrive] authorizeFromKeychain];
 }
@@ -79,6 +82,17 @@
 		RecipeViewController *destVC = (RecipeViewController *)segue.destinationViewController;
 		destVC.recipe = self->recommendedRecipe;
 	}
+}
+
+- (void)viewDidLayoutSubviews
+{
+	[self.view layoutIfNeeded];
+
+	// Layout the instructions
+	self.instructionsLabel.preferredMaxLayoutWidth = self.view.frameWidth - VIEW_PADDING * 2;
+	self.instructionsLabel.getConstraintToHeight.constant = self.instructionsLabel.intrinsicContentSize.height;
+
+	[self.view layoutSubviews];
 }
 
 

@@ -10,6 +10,7 @@
 		8E1ADBF81A36684F00C9A811 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1ADBF71A36684F00C9A811 /* RecipeViewController.m */; };
 		8E5899331A36846800E03B77 /* IngredientCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5899321A36846800E03B77 /* IngredientCollectionViewCell.m */; };
 		8E5899371A3691AC00E03B77 /* IngredientSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5899361A3691AC00E03B77 /* IngredientSectionHeader.m */; };
+		8E58993D1A36AE1500E03B77 /* UIViewController+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E58993C1A36AE1500E03B77 /* UIViewController+Extras.m */; };
 		8EDDD4F61A35AC8100A01D08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4F51A35AC8100A01D08 /* main.m */; };
 		8EDDD4F91A35AC8100A01D08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4F81A35AC8100A01D08 /* AppDelegate.m */; };
 		8EDDD4FC1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4FA1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld */; };
@@ -59,6 +60,8 @@
 		8E5899321A36846800E03B77 /* IngredientCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientCollectionViewCell.m; sourceTree = "<group>"; };
 		8E5899351A3691AC00E03B77 /* IngredientSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientSectionHeader.h; sourceTree = "<group>"; };
 		8E5899361A3691AC00E03B77 /* IngredientSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientSectionHeader.m; sourceTree = "<group>"; };
+		8E58993B1A36AE1500E03B77 /* UIViewController+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extras.h"; sourceTree = "<group>"; };
+		8E58993C1A36AE1500E03B77 /* UIViewController+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extras.m"; sourceTree = "<group>"; };
 		8EDDD4F01A35AC8000A01D08 /* VKRecipeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKRecipeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDDD4F41A35AC8100A01D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EDDD4F51A35AC8100A01D08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				8EDDD5281A35B2C500A01D08 /* UIView+VKExtras.m */,
 				8EE5F5081A3652B60004F7B4 /* NSDate+VKExtras.h */,
 				8EE5F5091A3652B60004F7B4 /* NSDate+VKExtras.m */,
+				8E58993B1A36AE1500E03B77 /* UIViewController+Extras.h */,
+				8E58993C1A36AE1500E03B77 /* UIViewController+Extras.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				8EE5F5021A35EA2C0004F7B4 /* Ingredient.m in Sources */,
 				8E5899371A3691AC00E03B77 /* IngredientSectionHeader.m in Sources */,
 				8EDDD5481A35C5B800A01D08 /* GTLDrive_Sources.m in Sources */,
+				8E58993D1A36AE1500E03B77 /* UIViewController+Extras.m in Sources */,
 				8EDDD52A1A35B2C500A01D08 /* UIView+VKExtras.m in Sources */,
 				8EE5F4F51A35DE750004F7B4 /* RemoveGoogleAccountButton.m in Sources */,
 				8EE5F4FF1A35E9D30004F7B4 /* Availability.m in Sources */,

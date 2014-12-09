@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) GoogleDriveButton *googleDriveButton;
 @property (strong, nonatomic) RemoveGoogleAccountButton *removeGoogleAccountButton;
+@property (strong, nonatomic) UILabel *instructionsLabel;
 
 @end
 

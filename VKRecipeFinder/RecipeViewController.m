@@ -10,6 +10,7 @@
 #import "Constants.h"
 #import "UIView+VKExtras.h"
 #import "UIColor+VKExtras.h"
+#import "UIViewController+Extras.h"
 #import "IngredientCollectionViewCell.h"
 #import "IngredientSectionHeader.h"
 #import "Recipe.h"
@@ -47,11 +48,9 @@
 	self.collectionView.showsVerticalScrollIndicator = NO;
 	self.collectionView.translatesAutoresizingMaskIntoConstraints = NO;
 
-	// Offset the collection view to avoid being hidden behind the navbar and status bar
-	CGFloat statusBarHeight = MIN([UIApplication sharedApplication].statusBarFrame.size.width, [UIApplication sharedApplication].statusBarFrame.size.height);
-	CGFloat navBarHeight = MIN(self.navigationController.navigationBar.frameWidth, self.navigationController.navigationBar.frameHeight);
-	CGFloat barsHeight = navBarHeight + statusBarHeight;
+	CGFloat barsHeight = [self barsHeight];
 
+	// Offset the collection view to avoid being hidden behind the navbar and status bar
 	self.collectionView.contentInset = UIEdgeInsetsMake(barsHeight, VIEW_PADDING, 0, VIEW_PADDING);
 	[self.view addSubview:self.collectionView];
 	[self.collectionView constraintToSuperViewCover];
@@ -65,8 +64,8 @@
 	self.noRecipeMessageLabel.numberOfLines = 0;
 	self.noRecipeMessageLabel.translatesAutoresizingMaskIntoConstraints = NO;
 	[self.view addSubview:self.noRecipeMessageLabel];
-	[self.noRecipeMessageLabel constraintToSuperViewTop:(barsHeight + VIEW_PADDING * 2)];
-	[self.noRecipeMessageLabel constraintToSuperViewCenterHorizontallyMargin:VIEW_PADDING * 2];
+	[self.noRecipeMessageLabel constraintToSuperViewTop:(barsHeight + 10)];
+	[self.noRecipeMessageLabel constraintToSuperViewCenterHorizontallyMargin:VIEW_PADDING];
 	[self.noRecipeMessageLabel constraintToHeight:0];
 
 	if (self.recipe)
@@ -88,8 +87,7 @@
 	[self.view layoutIfNeeded];
 
 	// Layout the no recipe message
-	NSLog(@"%f", self.view.frameWidth - VIEW_PADDING * 4);
-	self.noRecipeMessageLabel.preferredMaxLayoutWidth = self.view.frameWidth - VIEW_PADDING * 4;
+	self.noRecipeMessageLabel.preferredMaxLayoutWidth = self.view.frameWidth - VIEW_PADDING * 2;
 	self.noRecipeMessageLabel.getConstraintToHeight.constant = self.noRecipeMessageLabel.intrinsicContentSize.height;
 
 	[self.view layoutSubviews];
