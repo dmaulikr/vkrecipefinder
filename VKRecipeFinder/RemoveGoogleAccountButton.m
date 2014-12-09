@@ -7,8 +7,8 @@
 //
 
 #import "RemoveGoogleAccountButton.h"
-#import "UIColor+VKExtras.h"
 #import "Constants.h"
+#import "UIColor+VKExtras.h"
 
 #define BUTTON_COLOR [UIColor colorWithHex:@"333"]
 #define BUTTON_COLOR_REVERSE [UIColor colorWithHex:@"666"]

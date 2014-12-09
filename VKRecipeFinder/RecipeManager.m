@@ -98,7 +98,7 @@
 			BOOL sufficientIngredient = NO;
 			NSDate *ingredientExpiryDate;
 
-			// Check if any availability is sufficient for this ingredient
+			// Is there any availability for this ingredient?
 			for (Availability *availability in arrAvailabilities)
 			{
 				if ([availability sufficientForIngredient:ingredient])
@@ -109,7 +109,7 @@
 				}
 			}
 
-			// Sufficient ingredient? Save the earliest expiry date. Otherwise discard this recipe
+			// Sufficient ingredient? Update the recipe expiry date if required. Otherwise discard this recipe.
 			if (sufficientIngredient)
 			{
 				if (recipeExpiryDate == nil || [recipeExpiryDate compare:ingredientExpiryDate] == NSOrderedDescending)
@@ -124,7 +124,7 @@
 			}
 		}
 
-		// Potential recipe? Save it
+		// Potential recipe? Save it for further checking
 		if (potentialRecipe)
 		{
 			[arrPotentialRecipes addObject:@{
@@ -133,8 +133,6 @@
 			}];
 		}
 	}
-
-	NSLog(@"Potential Recipes: %@", arrPotentialRecipes);
 
 	// Pick the potential recipe with earliest expiry date
 	NSDate *earliestExpiryDate = nil;
@@ -147,8 +145,6 @@
 			result = [dict objectForKey:KEY_RECIPE];
 		}
 	}
-
-	NSLog(@"%@ at %@", result, earliestExpiryDate);
 
 	return result;
 }

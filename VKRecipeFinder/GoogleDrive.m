@@ -142,4 +142,22 @@ NSString *const GoogleDriveErrorDomain = @"GoogleDriveErrorDomain";
 	}];
 }
 
+- (void)deleteDownloadedFiles
+{
+	NSError *error;
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+
+	// Delete fridge file
+	if ([fileManager fileExistsAtPath:self.downloadedFridgeFilePath])
+	{
+		[fileManager removeItemAtPath:self.downloadedFridgeFilePath error:&error];
+	}
+
+	// Delete recipes file
+	if ([fileManager fileExistsAtPath:self.downloadedRecipesFilePath])
+	{
+		[fileManager removeItemAtPath:self.downloadedRecipesFilePath error:&error];
+	}
+}
+
 @end

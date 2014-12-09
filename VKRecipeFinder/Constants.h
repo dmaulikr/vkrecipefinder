@@ -8,8 +8,10 @@
 
 #define APP_FONT_SIZE 16
 #define APP_TEXT_COLOR [UIColor colorWithHex:@"333"]
+#define APP_SUBTEXT_COLOR [UIColor colorWithHex:@"999"]
 
 #define KEY_ERROR_MESSAGE @"Message"
+#define IS_LANDSCAPE() UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)
 
 
 /* ============== GOOGLE DRIVE =============== */
@@ -20,3 +22,4 @@
 
 #define GDRIVE_FILE_FRIDGE @"fridge.csv"
 #define GDRIVE_FILE_RECIPES @"recipes.json"
+

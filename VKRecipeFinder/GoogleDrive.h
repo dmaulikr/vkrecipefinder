@@ -17,6 +17,7 @@ extern NSString *const GoogleDriveErrorDomain;
 - (BOOL)authorizeFromKeychain;
 - (BOOL)removeAuthFromKeychain;
 - (void)downloadAppData:(void (^)(NSError *error))completion;
+- (void)deleteDownloadedFiles;
 
 @property (strong, nonatomic) GTMOAuth2Authentication *authorizer;
 @property (strong, nonatomic, readonly) NSString *downloadedFridgeFilePath, *downloadedRecipesFilePath;

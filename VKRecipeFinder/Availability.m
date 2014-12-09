@@ -18,15 +18,9 @@
 
 - (BOOL)sufficientForIngredient:(Ingredient *)ingredient
 {
-	BOOL result = NO;
-
-	// Same type of item and unit?
-	if ([self.item isEqualToString:ingredient.item] && [self.unit isEqualToString:ingredient.unit])
-	{
-		result = self.amount >= ingredient.amount;
-	}
-
-	return result;
+	return 	[self.item isEqualToString:ingredient.item] &&
+			[self.unit isEqualToString:ingredient.unit] &&
+			self.amount >= ingredient.amount;
 }
 
 @end

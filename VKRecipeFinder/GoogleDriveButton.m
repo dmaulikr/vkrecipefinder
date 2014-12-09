@@ -7,8 +7,8 @@
 //
 
 #import "GoogleDriveButton.h"
-#import "UIColor+VKExtras.h"
 #import "Constants.h"
+#import "UIColor+VKExtras.h"
 
 #define BUTTON_COLOR [UIColor colorWithHex:@"d35400"]
 #define BUTTON_COLOR_REVERSE [UIColor whiteColor]

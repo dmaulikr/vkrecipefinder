@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1ADBF81A36684F00C9A811 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1ADBF71A36684F00C9A811 /* RecipeViewController.m */; };
+		8E5899331A36846800E03B77 /* IngredientCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5899321A36846800E03B77 /* IngredientCollectionViewCell.m */; };
+		8E5899371A3691AC00E03B77 /* IngredientSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5899361A3691AC00E03B77 /* IngredientSectionHeader.m */; };
 		8EDDD4F61A35AC8100A01D08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4F51A35AC8100A01D08 /* main.m */; };
 		8EDDD4F91A35AC8100A01D08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4F81A35AC8100A01D08 /* AppDelegate.m */; };
 		8EDDD4FC1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDD4FA1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld */; };
@@ -50,6 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E1ADBF61A36684F00C9A811 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		8E1ADBF71A36684F00C9A811 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		8E5899311A36846800E03B77 /* IngredientCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientCollectionViewCell.h; sourceTree = "<group>"; };
+		8E5899321A36846800E03B77 /* IngredientCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientCollectionViewCell.m; sourceTree = "<group>"; };
+		8E5899351A3691AC00E03B77 /* IngredientSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientSectionHeader.h; sourceTree = "<group>"; };
+		8E5899361A3691AC00E03B77 /* IngredientSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientSectionHeader.m; sourceTree = "<group>"; };
 		8EDDD4F01A35AC8000A01D08 /* VKRecipeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKRecipeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDDD4F41A35AC8100A01D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EDDD4F51A35AC8100A01D08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +134,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E1ADBF51A36682300C9A811 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDD4FD1A35AC8100A01D08 /* ViewController.h */,
+				8EDDD4FE1A35AC8100A01D08 /* ViewController.m */,
+				8E1ADBF61A36684F00C9A811 /* RecipeViewController.h */,
+				8E1ADBF71A36684F00C9A811 /* RecipeViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8E5899341A36916700E03B77 /* Ingredient Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E5899311A36846800E03B77 /* IngredientCollectionViewCell.h */,
+				8E5899321A36846800E03B77 /* IngredientCollectionViewCell.m */,
+				8E5899351A3691AC00E03B77 /* IngredientSectionHeader.h */,
+				8E5899361A3691AC00E03B77 /* IngredientSectionHeader.m */,
+			);
+			name = "Ingredient Cells";
+			sourceTree = "<group>";
+		};
 		8EDDD4E71A35AC8000A01D08 = {
 			isa = PBXGroup;
 			children = (
@@ -152,10 +183,9 @@
 				8EDDD53F1A35C56100A01D08 /* Google Drive */,
 				8EDDD51C1A35AF6200A01D08 /* UI */,
 				8EE5F4F61A35E5960004F7B4 /* Models */,
+				8E1ADBF51A36682300C9A811 /* Controllers */,
 				8EDDD4F71A35AC8100A01D08 /* AppDelegate.h */,
 				8EDDD4F81A35AC8100A01D08 /* AppDelegate.m */,
-				8EDDD4FD1A35AC8100A01D08 /* ViewController.h */,
-				8EDDD4FE1A35AC8100A01D08 /* ViewController.m */,
 				8EDDD5001A35AC8100A01D08 /* Main.storyboard */,
 				8EDDD5031A35AC8100A01D08 /* Images.xcassets */,
 				8EDDD4FA1A35AC8100A01D08 /* VKRecipeFinder.xcdatamodeld */,
@@ -196,6 +226,7 @@
 		8EDDD51C1A35AF6200A01D08 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8E5899341A36916700E03B77 /* Ingredient Cells */,
 				8EDDD51E1A35AFC700A01D08 /* GoogleDriveButton.h */,
 				8EDDD51F1A35AFC700A01D08 /* GoogleDriveButton.m */,
 				8EE5F4F31A35DE750004F7B4 /* RemoveGoogleAccountButton.h */,
@@ -391,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EE5F5021A35EA2C0004F7B4 /* Ingredient.m in Sources */,
+				8E5899371A3691AC00E03B77 /* IngredientSectionHeader.m in Sources */,
 				8EDDD5481A35C5B800A01D08 /* GTLDrive_Sources.m in Sources */,
 				8EDDD52A1A35B2C500A01D08 /* UIView+VKExtras.m in Sources */,
 				8EE5F4F51A35DE750004F7B4 /* RemoveGoogleAccountButton.m in Sources */,
@@ -403,9 +435,11 @@
 				8EDDD5441A35C56900A01D08 /* GoogleAuthViewController.m in Sources */,
 				8EE5F5071A35EA8D0004F7B4 /* Recipe.m in Sources */,
 				8EDDD5451A35C56900A01D08 /* GoogleDrive.m in Sources */,
+				8E5899331A36846800E03B77 /* IngredientCollectionViewCell.m in Sources */,
 				8EDDD4F91A35AC8100A01D08 /* AppDelegate.m in Sources */,
 				8EDDD5241A35B12C00A01D08 /* UIColor+VKExtras.m in Sources */,
 				8EDDD4FF1A35AC8100A01D08 /* ViewController.m in Sources */,
+				8E1ADBF81A36684F00C9A811 /* RecipeViewController.m in Sources */,
 				8EDDD4F61A35AC8100A01D08 /* main.m in Sources */,
 				8EE5F4FC1A35E6020004F7B4 /* RecipeManager.m in Sources */,
 			);

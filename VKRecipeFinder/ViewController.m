@@ -7,12 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "UIColor+VKExtras.h"
-#import "UIView+Geometry.h"
-#import "UIView+VKExtras.h"
-#import "GoogleDriveButton.h"
 #import "Constants.h"
+#import "UIView+VKExtras.h"
 #import "UIColor+VKExtras.h"
+#import "GoogleDriveButton.h"
 #import "GTMOAuth2ViewControllerTouch.h"
 #import "GTLDrive.h"
 #import "GoogleAuthViewController.h"
@@ -20,12 +18,20 @@
 #import "RemoveGoogleAccountButton.h"
 #import "FridgeManager.h"
 #import "RecipeManager.h"
+#import "RecipeViewController.h"
+#import "Recipe.h"
+#import "Ingredient.h"
 
 #define SEGUE_ID_GOOGLE_AUTH @"openGoogleAuth"
+#define SEGUE_ID_SHOW_RECOMMENDATION @"showRecommendation"
 
 @implementation ViewController
+{
+	Recipe *recommendedRecipe;
+}
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
 	[super viewDidLoad];
 
 	// Google Drive button
@@ -58,11 +64,6 @@
 	self.removeGoogleAccountButton.hidden = ![[GoogleDrive sharedDrive] authorizeFromKeychain];
 }
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 	// Open Google Auth screen?
@@ -70,6 +71,13 @@
 	{
 		UINavigationController *destNavVC = (UINavigationController *)segue.destinationViewController;
 		destNavVC.viewControllers = @[[self createGoogleAuthViewController]];
+	}
+
+	// Show recommendation?
+	else if ([segue.identifier isEqualToString:SEGUE_ID_SHOW_RECOMMENDATION])
+	{
+		RecipeViewController *destVC = (RecipeViewController *)segue.destinationViewController;
+		destVC.recipe = self->recommendedRecipe;
 	}
 }
 
@@ -131,12 +139,24 @@
 - (void)importFromGoogleDrive
 {
 	[[GoogleDrive sharedDrive] downloadAppData:^(NSError *error) {
-		// Read data from downloaded files
-		NSArray *arrAvailabilities = [[FridgeManager sharedInstance] readAvailabilitesFromFile:[GoogleDrive sharedDrive].downloadedFridgeFilePath];
-		NSArray *arrRecipes = [[RecipeManager sharedInstance] readRecipesFromFile:[GoogleDrive sharedDrive].downloadedRecipesFilePath];
+		if (error)
+		{
+			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:[[error userInfo] objectForKey:KEY_ERROR_MESSAGE] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[errorAlert show];
+		}
+		else
+		{
+			// Read data from downloaded files
+			NSArray *arrAvailabilities = [[FridgeManager sharedInstance] readAvailabilitesFromFile:[GoogleDrive sharedDrive].downloadedFridgeFilePath];
+			NSArray *arrRecipes = [[RecipeManager sharedInstance] readRecipesFromFile:[GoogleDrive sharedDrive].downloadedRecipesFilePath];
 
-		// Pick recommendation
-		[[RecipeManager sharedInstance] pickRecommendationFromRecipes:arrRecipes andAvailabilities:arrAvailabilities];
+			// Delete the downloaded files as they are no longer in use
+			[[GoogleDrive sharedDrive] deleteDownloadedFiles];
+
+			// Show the recommended recipe
+			self->recommendedRecipe = [[RecipeManager sharedInstance] pickRecommendationFromRecipes:arrRecipes andAvailabilities:arrAvailabilities];
+			[self performSegueWithIdentifier:SEGUE_ID_SHOW_RECOMMENDATION sender:self];
+		}
 	}];
 }
 
