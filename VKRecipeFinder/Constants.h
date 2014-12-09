@@ -9,7 +9,7 @@
 #define APP_FONT_SIZE 16
 #define APP_HEADER_FONT_SIZE 20
 #define APP_TEXT_COLOR [UIColor colorWithHex:@"333"]
-#define APP_SUBTEXT_COLOR [UIColor colorWithHex:@"999"]
+#define APP_SUBTEXT_COLOR [UIColor colorWithHex:@"909090"]
 
 #define KEY_ERROR_MESSAGE @"Message"
 #define IS_LANDSCAPE() UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)

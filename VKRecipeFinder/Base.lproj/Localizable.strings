@@ -6,7 +6,7 @@
   Copyright (c) 2014 Vinh Khoa Nguyen. All rights reserved.
 */
 
-"Instructions" = "Instructions:\n\nStep 1: create 2 files called fridge.csv & recipes.json\n\nStep 2: place them at the root folder of your Google Drive account\n\nStep 3: touch the button below to view recommended recipe.";
+"Instructions" = "Instructions:\n\nStep 1: create 2 files called fridge.csv & recipes.json\n\nStep 2: place them at the root folder of your Google Drive account\n\nStep 3: touch below button to import files and view recommended recipe";
 "Import_Button_Title" = "Import From Google Drive";
 "Remove_Account_Button_Title" = "Unauthorize";
 "Recommendation" = "Recommendation";

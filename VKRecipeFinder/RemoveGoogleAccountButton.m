@@ -11,7 +11,7 @@
 #import "UIColor+VKExtras.h"
 
 #define BUTTON_COLOR [UIColor colorWithHex:@"333"]
-#define BUTTON_COLOR_REVERSE [UIColor colorWithHex:@"666"]
+#define BUTTON_COLOR_REVERSE [UIColor colorWithHex:@"999"]
 #define BUTTON_HEIGHT 30
 #define PADDING_HORIZONTAL 20
 

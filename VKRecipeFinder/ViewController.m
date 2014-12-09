@@ -42,7 +42,7 @@
 	[self.view addSubview:self.googleDriveButton];
 	self.googleDriveButton.translatesAutoresizingMaskIntoConstraints = NO;
 	[self.googleDriveButton constraintToSelfSize];
-	[self.googleDriveButton constraintToSuperViewBottom:50];
+	[self.googleDriveButton constraintToSuperViewBottom:40];
 	[self.googleDriveButton constraintToSuperViewCenterHorizontally];
 
 	// Instructions
@@ -152,9 +152,22 @@
 
 - (void)importFromGoogleDrive
 {
+	// Display activity indicator
+	UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+	activityIndicatorView.color = [UIColor colorWithHex:@"d35400"];
+	activityIndicatorView.translatesAutoresizingMaskIntoConstraints = NO;
+	[self.view addSubview:activityIndicatorView];
+	[activityIndicatorView constraintToSuperViewCenter];
+	[activityIndicatorView startAnimating];
+	self.view.userInteractionEnabled = NO;
+
 	[[GoogleDrive sharedDrive] downloadAppData:^(NSError *error) {
 		if (error)
 		{
+			// Stop activity indicator
+			[activityIndicatorView stopAnimating];
+			self.view.userInteractionEnabled = YES;
+
 			UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:[[error userInfo] objectForKey:KEY_ERROR_MESSAGE] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 			[errorAlert show];
 		}
@@ -167,8 +180,12 @@
 			// Delete the downloaded files as they are no longer in use
 			[[GoogleDrive sharedDrive] deleteDownloadedFiles];
 
-			// Show the recommended recipe
 			self->recommendedRecipe = [[RecipeManager sharedInstance] pickRecommendationFromRecipes:arrRecipes andAvailabilities:arrAvailabilities];
+
+			// Stop activity indicator
+			[activityIndicatorView stopAnimating];
+			self.view.userInteractionEnabled = YES;
+
 			[self performSegueWithIdentifier:SEGUE_ID_SHOW_RECOMMENDATION sender:self];
 		}
 	}];
