@@ -12,3 +12,6 @@
 "Recommendation" = "Recommendation";
 "Back" = "Back";
 "Error" = "Error";
+
+"No_Recommendation_Title" = "Order Takeout";
+"No_Recommendation_Message" = "Sorry, what you have in your fridge is not enough to make any of the recipes.";

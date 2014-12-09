@@ -23,7 +23,7 @@
 #define CELL_PORTRAIT_HEIGHT 50
 #define CELL_PORTRAIT_MARGIN 15
 
-#define COLLECTION_VIEW_INSET_H 15
+#define VIEW_PADDING 15
 
 #define SUPPLEMENTARY_VIEW_ID_HEADER @"HeaderViewID"
 #define HEADER_HEIGHT 60
@@ -33,8 +33,6 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-
-	self.navigationItem.title = NSLocalizedString(@"Recommendation", nil);
 
 	// Collection view
 	self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[UICollectionViewFlowLayout new]];
@@ -49,20 +47,53 @@
 	self.collectionView.showsVerticalScrollIndicator = NO;
 	self.collectionView.translatesAutoresizingMaskIntoConstraints = NO;
 
-	// Offset the collection view to avoid the navbar and status bar
+	// Offset the collection view to avoid being hidden behind the navbar and status bar
 	CGFloat statusBarHeight = MIN([UIApplication sharedApplication].statusBarFrame.size.width, [UIApplication sharedApplication].statusBarFrame.size.height);
-	self.collectionView.contentInset = UIEdgeInsetsMake(self.navigationController.navigationBar.frameHeight + statusBarHeight, COLLECTION_VIEW_INSET_H, 0, COLLECTION_VIEW_INSET_H);
+	CGFloat navBarHeight = MIN(self.navigationController.navigationBar.frameWidth, self.navigationController.navigationBar.frameHeight);
+	CGFloat barsHeight = navBarHeight + statusBarHeight;
+
+	self.collectionView.contentInset = UIEdgeInsetsMake(barsHeight, VIEW_PADDING, 0, VIEW_PADDING);
 	[self.view addSubview:self.collectionView];
 	[self.collectionView constraintToSuperViewCover];
 
-	// No recommendation message
-	self.noRecipeLabel = [UILabel new];
-	self.noRecipeLabel.font = [UIFont systemFontOfSize:APP_FONT_SIZE];
-	self.noRecipeLabel.textColor = APP_TEXT_COLOR;
-	self.noRecipeLabel.text = NSLocalizedString(@"No_Recommendation", nil);
-	self.noRecipeLabel.textAlignment = NSTextAlignmentCenter;
+	// No recommendation: message
+	self.noRecipeMessageLabel = [UILabel new];
+	self.noRecipeMessageLabel.font = [UIFont systemFontOfSize:APP_FONT_SIZE];
+	self.noRecipeMessageLabel.textColor = APP_TEXT_COLOR;
+	self.noRecipeMessageLabel.textAlignment = NSTextAlignmentCenter;
+	self.noRecipeMessageLabel.text = NSLocalizedString(@"No_Recommendation_Message", nil);
+	self.noRecipeMessageLabel.numberOfLines = 0;
+	self.noRecipeMessageLabel.translatesAutoresizingMaskIntoConstraints = NO;
+	[self.view addSubview:self.noRecipeMessageLabel];
+	[self.noRecipeMessageLabel constraintToSuperViewTop:(barsHeight + VIEW_PADDING * 2)];
+	[self.noRecipeMessageLabel constraintToSuperViewCenterHorizontallyMargin:VIEW_PADDING * 2];
+	[self.noRecipeMessageLabel constraintToHeight:0];
+
+	if (self.recipe)
+	{
+		self.navigationItem.title = NSLocalizedString(@"Recommendation", nil);
+		self.collectionView.hidden = NO;
+		self.noRecipeMessageLabel.hidden = YES;
+	}
+	else
+	{
+		self.navigationItem.title = NSLocalizedString(@"No_Recommendation_Title", nil);
+		self.collectionView.hidden = YES;
+		self.noRecipeMessageLabel.hidden = NO;
+	}
 }
 
+- (void)viewDidLayoutSubviews
+{
+	[self.view layoutIfNeeded];
+
+	// Layout the no recipe message
+	NSLog(@"%f", self.view.frameWidth - VIEW_PADDING * 4);
+	self.noRecipeMessageLabel.preferredMaxLayoutWidth = self.view.frameWidth - VIEW_PADDING * 4;
+	self.noRecipeMessageLabel.getConstraintToHeight.constant = self.noRecipeMessageLabel.intrinsicContentSize.height;
+
+	[self.view layoutSubviews];
+}
 
 
 /* ================================= COLLECTION VIEW DATASOURCE / DELEGATE =================================== */

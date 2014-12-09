@@ -7,6 +7,7 @@
 //
 
 #define APP_FONT_SIZE 16
+#define APP_HEADER_FONT_SIZE 20
 #define APP_TEXT_COLOR [UIColor colorWithHex:@"333"]
 #define APP_SUBTEXT_COLOR [UIColor colorWithHex:@"999"]
 

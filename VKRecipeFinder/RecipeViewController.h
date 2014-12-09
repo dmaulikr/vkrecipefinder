@@ -14,6 +14,6 @@
 
 @property (strong, nonatomic) Recipe *recipe;
 @property (strong, nonatomic) UICollectionView *collectionView;
-@property (strong, nonatomic) UILabel *noRecipeLabel;
+@property (strong, nonatomic) UILabel *noRecipeMessageLabel;
 
 @end

@@ -20,7 +20,7 @@
 	if (self)
 	{
 		self.recipeNameLabel = [UILabel new];
-		self.recipeNameLabel.font = [UIFont boldSystemFontOfSize:APP_FONT_SIZE * 1.3];
+		self.recipeNameLabel.font = [UIFont boldSystemFontOfSize:APP_HEADER_FONT_SIZE];
 		self.recipeNameLabel.textColor = APP_TEXT_COLOR;
 		self.recipeNameLabel.textAlignment = NSTextAlignmentCenter;
 		self.recipeNameLabel.numberOfLines = 0;
